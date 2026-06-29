@@ -1,0 +1,495 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, .85),
+      rgba(0, 0, 0, .95)),
+    url("https://picjumbo.com/wp-content/uploads/dark-halloween-background-with-glowing-halloween-pumpkins-free-image.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  color: white;
+
+  font-family: 'Montserrat', sans-serif;
+
+  padding: 40px 20px;
+
+  animation: fadePage 1.2s ease;
+}
+
+/* ENTRADA DA PÁGINA */
+@keyframes fadePage {
+  from {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* BOTÃO VOLTAR */
+.botao {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  padding: 14px 30px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  color: white;
+
+  letter-spacing: 3px;
+
+  transition: .3s;
+
+  backdrop-filter: blur(10px);
+}
+
+.botao:hover {
+  transform: scale(1.08);
+
+  background: rgba(255, 255, 255, 0.12);
+
+  box-shadow:
+    0 0 20px rgba(255, 255, 255, 0.15),
+    0 0 40px rgba(255, 0, 0, 0.08);
+}
+
+/* TITULO */
+.section-title {
+  margin-top: 70px;
+
+  text-align: center;
+
+  font-size: 60px;
+
+  letter-spacing: 12px;
+
+  font-family: 'Cinzel', serif;
+
+  text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.2),
+    0 0 30px rgba(255, 0, 0, 0.15);
+
+  animation: glowTitle 2.5s infinite alternate;
+}
+
+/* GLow animado */
+@keyframes glowTitle {
+  from {
+    text-shadow:
+      0 0 10px rgba(255, 255, 255, 0.2),
+      0 0 20px rgba(255, 0, 0, 0.1);
+  }
+
+  to {
+    text-shadow:
+      0 0 20px rgba(255, 255, 255, 0.4),
+      0 0 50px rgba(255, 0, 0, 0.25);
+  }
+}
+
+/* GRID */
+.gift-grid {
+  margin-top: 70px;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 25px;
+
+  max-width: 1000px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CARDS */
+.gift-card {
+  padding: 35px 20px;
+
+  border-radius: 25px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  text-align: center;
+
+  font-size: 18px;
+
+  letter-spacing: 2px;
+
+  transition: .4s;
+
+  backdrop-filter: blur(10px);
+
+  cursor: pointer;
+
+  animation: cardEnter .6s ease forwards;
+  opacity: 0;
+}
+
+/* entrada escalonada */
+.gift-card:nth-child(1) {
+  animation-delay: .1s;
+}
+
+.gift-card:nth-child(2) {
+  animation-delay: .2s;
+}
+
+.gift-card:nth-child(3) {
+  animation-delay: .3s;
+}
+
+.gift-card:nth-child(4) {
+  animation-delay: .4s;
+}
+
+.gift-card:nth-child(5) {
+  animation-delay: .5s;
+}
+
+.gift-card:nth-child(6) {
+  animation-delay: .6s;
+}
+
+.gift-card:nth-child(7) {
+  animation-delay: .7s;
+}
+
+.gift-card:nth-child(8) {
+  animation-delay: .8s;
+}
+
+@keyframes cardEnter {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* HOVER NEON */
+.gift-card:hover {
+  transform: translateY(-10px) scale(1.05);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow:
+    0 0 15px rgba(255, 255, 255, 0.1),
+    0 0 40px rgba(255, 0, 0, 0.15);
+}
+
+/* FOOTER */
+footer {
+  margin-top: 90px;
+
+  text-align: center;
+
+  opacity: 0.5;
+
+  letter-spacing: 2px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+
+  .section-title {
+    font-size: 38px;
+    letter-spacing: 5px;
+  }
+
+  .gift-card {
+    font-size: 16px;
+  }
+}
+
+.gifts {
+  width: min(1100px, 90%);
+  margin: auto;
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  margin-bottom: 15px;
+}
+
+.section-subtitle {
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+  opacity: .75;
+  line-height: 1.8;
+  margin-bottom: 70px;
+}
+
+.gift-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: 30px;
+
+}
+
+.gift-card,
+.info-card {
+
+  background: rgba(255, 255, 255, .05);
+  border: 1px solid rgba(255, 255, 255, .12);
+  backdrop-filter: blur(14px);
+
+  border-radius: 20px;
+  padding: 25px;
+
+  transition: .35s;
+
+}
+
+.gift-card:hover,
+.info-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(255, 255, 255, .25);
+}
+
+
+
+.gift-card h2 {
+
+  margin-bottom: 20px;
+
+  font-size: 22px;
+
+}
+
+.gift-card ul {
+
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 300;
+
+  letter-spacing: .6px;
+
+  line-height: 1.9;
+
+}
+
+.gift-card li {
+
+  padding: 10px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+
+}
+
+.gift-card li:last-child {
+
+  border: none;
+
+}
+
+.pix-footer {
+
+  margin-top: 90px;
+
+  padding: 60px 20px;
+
+  text-align: center;
+
+  border-top: 1px solid rgba(255, 255, 255, .08);
+
+}
+
+.pix-footer h3 {
+
+  font-size: 28px;
+
+  margin-bottom: 15px;
+
+}
+
+.pix-footer p {
+
+  opacity: .75;
+
+  margin-bottom: 25px;
+
+}
+
+.pix-btn {
+
+  padding: 16px 45px;
+
+  border: none;
+
+  border-radius: 50px;
+
+  background: #fff;
+
+  color: #000;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .3s;
+
+}
+
+.pix-btn:hover {
+
+  transform: scale(1.05);
+
+}
+
+/* BOTÃO VOLTAR */
+.bnt {
+  position: fixed;
+
+  top: 20px;
+  left: 20px;
+
+  z-index: 1000;
+
+  display: inline-block;
+
+  padding: 14px 30px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  background: rgba(0, 0, 0, .637);
+  border: 1px solid rgba(255, 255, 255, .15);
+
+  color: white;
+
+  letter-spacing: 3px;
+
+  transition: .3s;
+
+  backdrop-filter: blur(10px);
+}
+
+.bnt:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, .15);
+
+  box-shadow: 0 0 20px rgba(255, 255, 255, .15);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all .7s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media(max-width:768px) {
+
+  .gift-grid,
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-back {
+    top: 12px;
+    left: 12px;
+    padding: 10px 16px;
+    font-size: 11px;
+  }
+
+}
+
+.gift-card-simple {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 32px;
+
+  padding: 35px 25px;
+
+  border-radius: 25px;
+
+  background: rgba(255, 255, 255, .05);
+  border: 1px solid rgba(255, 255, 255, .12);
+
+  backdrop-filter: blur(14px);
+
+  text-align: center;
+
+  transition: .35s;
+
+  cursor: pointer;
+
+  animation: cardEnter .6s ease forwards;
+  opacity: 0;
+}
+
+.gift-card-simple:nth-child(3) {
+  animation-delay: .3s;
+}
+
+.gift-card-simple:nth-child(4) {
+  animation-delay: .4s;
+}
+
+.gift-card-simple:hover {
+  transform: translateY(-8px) scale(1.02);
+
+  border-color: rgba(255, 255, 255, .25);
+
+  box-shadow:
+    0 0 15px rgba(255, 255, 255, .1),
+    0 0 40px rgba(255, 0, 0, .15);
+}
+
+.gift-card-simple h2 {
+  font-size: 24px;
+  margin-bottom: 22px;
+}
