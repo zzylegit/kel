@@ -228,7 +228,7 @@ html, body{
 
   .info-card{
     width:90%;
-    max-width:320px;
+    max-width:330px;
     height:auto;
     padding:25px;
   }
@@ -258,7 +258,7 @@ html, body{
   }
 
   .info-card{
-    padding:18px;
+    padding:25px;
   }
 
 }
