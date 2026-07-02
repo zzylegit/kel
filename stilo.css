@@ -77,8 +77,8 @@ body {
 
 /* CARD */
 .info-card {
-  width: 260px;
-  height: 260px;
+  width: 360px;
+  height: 360px;
 
   display: flex;
   flex-direction: column;
@@ -189,8 +189,8 @@ body {
   }
 
   .info-card {
-    width: 220px;
-    height: 220px;
+    width: 360px;
+    height: 360px;
   }
 
 }
@@ -235,7 +235,7 @@ body {
 }
 
 /* celulares pequenos */
-@media (max-width:400px) {
+@media (max-width:500px) {
 
   .section-title {
     font-size: 26px;
