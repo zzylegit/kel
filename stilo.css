@@ -218,13 +218,13 @@ body {
 
   .info-card {
     width: 80%;
-    max-width: 80%;
+    max-width: 400px;
 
     min-height: 190px;
     padding: 30px;
 
     border-radius: 22px;
-  }
+}
 
   .btn-voltar {
     top: 12px;
