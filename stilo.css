@@ -209,10 +209,9 @@ body {
     align-items: center;
     gap: 20px;
   }
-
-  .info-card {
-    width: 95%;
-    max-width: 420px;
+  .info-card{
+    width: calc(100% - 20px);
+    max-width: none;
 
     min-height: 220px;
     padding: 25px;
