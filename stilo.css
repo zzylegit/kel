@@ -143,7 +143,7 @@ body {
 
 
 .info-card {
-  width: clamp(250px, 28vw, 350px);
+  width: clamp(280px, 28vw, 380px);
   min-height: 280px;
 
   padding: 30px;
@@ -212,9 +212,9 @@ body {
 
   .info-card {
     width: 100%;
-    max-width: 390px;
+    max-width: 400px;
     height: auto;
-    padding: 45px;
+    padding: 50px;
   }
 
   .btn-voltar {
@@ -235,14 +235,14 @@ body {
 }
 
 /* celulares pequenos */
-@media (max-width:600px) {
+@media (max-width:800px) {
 
   .section-title {
     font-size: 26px;
   }
 
   .info-card {
-    padding: 18px;
+    padding: 25px;
   }
 
 }
