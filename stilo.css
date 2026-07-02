@@ -211,8 +211,8 @@ body {
   }
 
   .info-card {
-    width: 100%;
-    max-width: 10px;
+    width: 90%;
+    max-width: 3px;
     height: auto;
     padding: 25px;
   }
