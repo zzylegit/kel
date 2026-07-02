@@ -215,10 +215,10 @@ body {
 
     gap: 20px;
   }
+   .info-card {
+    width: 63%;
+    max-width: 330px;
 
-  .info-card {
-    width: 70%;
-    max-width: 350px;
 
     min-height: 190px;
     padding: 30px;
