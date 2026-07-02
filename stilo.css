@@ -77,8 +77,8 @@ body {
 
 /* CARD */
 .info-card {
-  width: 400px;
-  height: 380px;
+  width: 260px;
+  height: 260px;
 
   display: flex;
   flex-direction: column;
@@ -143,7 +143,7 @@ body {
 
 
 .info-card {
-  width: clamp(280px, 28vw, 380px);
+  width: clamp(250px, 28vw, 350px);
   min-height: 280px;
 
   padding: 30px;
@@ -189,12 +189,11 @@ body {
   }
 
   .info-card {
-    width: 360px;
-    height: 360px;
+    width: 220px;
+    height: 220px;
   }
 
 }
-
 /* celulares */
 @media (max-width:768px) {
 
@@ -208,13 +207,15 @@ body {
   .cards {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
   .info-card {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    padding: 50px;
+    width: 95%;
+    max-width: 420px;
+
+    min-height: 220px;
+    padding: 25px;
   }
 
   .btn-voltar {
@@ -225,24 +226,25 @@ body {
   }
 
   .info-card h3 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .info-card p {
-    font-size: 14px;
+    font-size: 15px;
   }
 
 }
+}
 
 /* celulares pequenos */
-@media (max-width:800px) {
+@media (max-width:400px) {
 
   .section-title {
     font-size: 26px;
   }
 
   .info-card {
-    padding: 25px;
+    padding: 18px;
   }
 
 }
