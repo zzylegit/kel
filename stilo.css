@@ -195,6 +195,7 @@ body {
 
 }
 /* celulares */
+/* ================= CELULARES ================= */
 @media (max-width:768px) {
 
   .section-title {
@@ -205,16 +206,24 @@ body {
   }
 
   .cards {
+    width: 100%;
+    padding: 0 15px;
+
+    display: flex;
     flex-direction: column;
     align-items: center;
+
     gap: 20px;
   }
-  .info-card{
-    width: calc(100% - 20px);
-    max-width: none;
 
-    min-height: 220px;
-    padding: 25px;
+  .info-card {
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 190px;
+    padding: 30px;
+
+    border-radius: 22px;
   }
 
   .btn-voltar {
@@ -225,14 +234,14 @@ body {
   }
 
   .info-card h3 {
-    font-size: 20px;
+    font-size: 26px;
+    margin-top: 10px;
   }
 
   .info-card p {
-    font-size: 15px;
+    font-size: 18px;
   }
 
-}
 }
 
 /* celulares pequenos */
