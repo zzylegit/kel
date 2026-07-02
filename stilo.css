@@ -189,14 +189,14 @@ body {
   }
 
   .info-card {
-    width: 260px;
-    height: 260px;
+    width: 220px;
+    height: 220px;
   }
 
 }
 
 /* celulares */
-@media (max-width:780px) {
+@media (max-width:768px) {
 
   .section-title {
     font-size: 32px;
@@ -211,10 +211,10 @@ body {
   }
 
   .info-card {
-    width: 90%;
-    max-width: 3px;
+    width: 100%;
+    max-width: 370px;
     height: auto;
-    padding: 25px;
+    padding: 30px;
   }
 
   .btn-voltar {
